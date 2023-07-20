@@ -14,6 +14,11 @@
 		7B792B892A698EEB001B7292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B792B882A698EEB001B7292 /* Assets.xcassets */; };
 		7B792B8C2A698EEB001B7292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B792B8A2A698EEB001B7292 /* LaunchScreen.storyboard */; };
 		7B792B9B2A698F34001B7292 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B792B9A2A698F34001B7292 /* Constants.swift */; };
+		7B792B9F2A699184001B7292 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B792B9E2A699184001B7292 /* NetworkManager.swift */; };
+		7B792BA12A69918A001B7292 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B792BA02A69918A001B7292 /* Endpoint.swift */; };
+		7B792BA42A6995AB001B7292 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B792BA32A6995AB001B7292 /* NetworkServiceError.swift */; };
+		7B792BA62A699765001B7292 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B792BA52A699765001B7292 /* MovieModel.swift */; };
+		7B792BA82A69976C001B7292 /* TVShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B792BA72A69976C001B7292 /* TVShowModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		7B792B8B2A698EEB001B7292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B792B8D2A698EEB001B7292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B792B9A2A698F34001B7292 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7B792B9E2A699184001B7292 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7B792BA02A69918A001B7292 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7B792BA32A6995AB001B7292 /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		7B792BA52A699765001B7292 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		7B792BA72A69976C001B7292 /* TVShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		7B792B7E2A698EE9001B7292 /* TheMovieDBAPI */ = {
 			isa = PBXGroup;
 			children = (
+				7B792B9C2A699174001B7292 /* Service */,
 				7B792B992A698F25001B7292 /* Helpers */,
 				7B792B982A698F22001B7292 /* Model */,
 				7B792B972A698F1C001B7292 /* ViewModel */,
@@ -114,6 +125,8 @@
 		7B792B982A698F22001B7292 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B792BA52A699765001B7292 /* MovieModel.swift */,
+				7B792BA72A69976C001B7292 /* TVShowModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,8 +135,18 @@
 			isa = PBXGroup;
 			children = (
 				7B792B9A2A698F34001B7292 /* Constants.swift */,
+				7B792BA32A6995AB001B7292 /* NetworkServiceError.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7B792B9C2A699174001B7292 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7B792B9E2A699184001B7292 /* NetworkManager.swift */,
+				7B792BA02A69918A001B7292 /* Endpoint.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B792BA42A6995AB001B7292 /* NetworkServiceError.swift in Sources */,
 				7B792B842A698EE9001B7292 /* ViewController.swift in Sources */,
 				7B792B802A698EE9001B7292 /* AppDelegate.swift in Sources */,
+				7B792B9F2A699184001B7292 /* NetworkManager.swift in Sources */,
+				7B792BA82A69976C001B7292 /* TVShowModel.swift in Sources */,
+				7B792BA62A699765001B7292 /* MovieModel.swift in Sources */,
 				7B792B822A698EE9001B7292 /* SceneDelegate.swift in Sources */,
+				7B792BA12A69918A001B7292 /* Endpoint.swift in Sources */,
 				7B792B9B2A698F34001B7292 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
